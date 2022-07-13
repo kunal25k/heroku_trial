@@ -7,6 +7,8 @@ from pickle import dump, load
 
 app = Flask(__name__)
 
+rf = load(open('rfReg_all.sav', 'rb'))
+
 @app.route("/")
 def hello():
     return render_template('index.html')
