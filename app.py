@@ -18,6 +18,8 @@ def submit():
         x = 0
         if name == 2:
             x = 1
+        else:
+            x = 5
     return render_template('sub.html', n = x)
 
 
