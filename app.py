@@ -16,7 +16,7 @@ def submit():
     if request.method == 'POST':
         name = request.form['username']
         x = 0
-        if name == 'y':
+        if name == 2:
             x = 1
     return render_template('sub.html', n = x)
 
